@@ -25,7 +25,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: chermed
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: $PLEASE_REPLACE_ME
   on:
     tags: true
     repo: chermed/odootools
