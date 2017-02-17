@@ -18,11 +18,14 @@ from odootools import odootools
 
 class TestOdootools(unittest.TestCase):
 
-    def setUp(self):
-        pass
-
-    def tearDown(self):
-        pass
-
-    def test_000_something(self):
-        pass
+    def test_dt_range(self):
+        start = '2017-02-27'
+        stop = '2017-03-02'
+        dates = [x for x in odootools.dt_range(start, stop)]
+        results = [
+            '2017-02-27',
+            '2017-02-28',
+            '2017-03-01',
+            '2017-03-02',
+        ]
+        self.assertEqual(dates, results, "dt_range return error")
