@@ -145,7 +145,7 @@ class DateRange:
         self._fmt = fmt
 
     def __str__(self):
-        return "({} - {}) exclude dates {} and weekedays {}".format(
+        return "(%s - %s) exclude dates %s and weekedays %s" % (
             self._start, self._stop, self._exclude_dates, self._exclude_weekdays)
 
     def __iter__(self):
