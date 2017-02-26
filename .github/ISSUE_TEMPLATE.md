@@ -1,6 +1,7 @@
 * Python Package for Odoo version:
 * Python version:
 * Operating System:
+* Odoo version :
 
 ### Description
 

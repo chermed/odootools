@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Mohamed Cherkaoui <chermed@gmail.com>
+* Mohamed Cherkaoui <chermed@gmail.com> website: http://mohamedcherkaoui.com
 
 Contributors
 ------------
