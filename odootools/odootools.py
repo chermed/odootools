@@ -3,7 +3,7 @@
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import calendar
-
+from past.builtins import basestring
 
 class Date:
     """docstring for Date"""
