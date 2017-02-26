@@ -21,7 +21,7 @@ test_requirements = [
 setup(
     name='odootools',
     version='0.1.0',
-    description="Odoo tools contains some functions to help Odoo developpers",
+    description="Package that conatin some tools to simplify Odoo addons developpement",
     long_description=readme + '\n\n' + history,
     author="Mohamed Cherkaoui",
     author_email='chermed@gmail.com',
