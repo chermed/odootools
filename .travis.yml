@@ -1,9 +1,6 @@
 language: python
-python: 3.5
+python: 2.7
 env:
-- TOXENV=py35
-- TOXENV=py34
-- TOXENV=py33
 - TOXENV=py27
 - TOXENV=py26
 - TOXENV=pypy
@@ -11,9 +8,9 @@ install: pip install -U tox
 script: tox -e ${TOXENV}
 deploy:
   provider: pypi
-  distributions: sdist bdist_wheel
   user: chermed
   password:
-    secure: kmoNSVetcr3gO1xR1/Xq+ml9nKeG0crb/8Sz/9NEaJGFyeiDAzk3KmJyDhc4PfE3DkbRpRHDSgGDmQp73/eaiN1D4YK7qmjbhMzWsITRB+SIN9ptwIvh9yYEyUpkCFhDsjuCMtVnwEtpjUYsPYOKLVNKbK7eUX5EkWJX7XQDvcJ/3ga9TlOfMTwmpQx7BlsJHms3ttBoS8/VMBYssKQE6ifhdTL2fBohyNW2bI28UsaHkimHxSKCw/YfrzoyqdUC4B9D9FZiA47RRCrFGtxT62o7jpsqOWHqDQHBDZl2Nvro+NcxKlcnT1rN4hTRHb3qZlNuNtEQCwwgUzdezbO4dUlo/HyhH6Aolw93oP7afdW2RLQE5YoSJCPSYu8eK+LTMvIrDGj5Nc4y9w9isurKtHsm/Tfoua/5nvjph9L2URLZtyKZsVqNAPuVMUAoQTuhILu6nJFDZ7kR8wmDpA516LbTJG7gpYTkB7H5Sw7u+cNM893iRBQ4uzyfDxH6KaoIMb8qnBIqFbutKSyeZ6IHgPajcBrFpZblSB6qbedcklyP27aAiFVRUSe1aBpd9irYNNeE8iwsDmGmTKAtIyhHLBpBzkvj0U1QMhCnPBheC7pPkwi6VvYOPnOMvuKvqEubFi45ptTcFesRxxSKb7DcSGxyh0j3XsVgXwMyDAJRVYo=
+    secure: DPO87OEmx5uhQY0wBwqSy7d0KbZCQH3JG5cUZ2cGrc/OHrVADezw6RYo1kQmNlRy3LJTPRcpVZFjzXQKeZUkNDkTfsFSssj/loj9b87BVz5MYnmzXoZRvgSnFlDJUiAkkQ0DEg9KX9xHXA6J99zs4v6vx4m8L/2yB7ThM7K3AhpR7Pes0soJwHk2MQWc1xsU/hKxwrNp3QMKhM3rvu8mjhmEwj8k8Mzdkqdhflorz/L/QwQWa1YsJM1EtoRM1FwNdKfXqBDFxkoMYvkCA4qIFqnA7G3CCQw6RXv9TecrgXykiEF6HDpgsznorlGubqyG1T1zciuEjVnMXNVo8x20gUC3G1sgPDBMvbEghRRxWDmd84oI8GMNgQqv/J4KJQaACXtce/OA4p8zTlAbbWD+Er7nv3BVH4yWQxdno/OWZINU5pHBybzc95HaNEOtkacH/l4hfQf7QRqbVzLu6V+mmcZQw168bpuGyCmtQsbdQ81E9YnrX5q+OhuMtXMISxBw0nH9CMyG52cyMxtHumlkUanxtiEsqo1A+l3VfgLZAfkoILtskcOddgzSFc8KhyqqbYZiYcsYE9+fWJMbRdNZzHvlbKescL7IOZz5NtupMSNL9B1/rpNUJd8ZU+Kp6XdfelUMAPFtQNKb3HULIcM9aRI83LcLvBvqVYpsrwQXXNw=
   on:
+    distributions: sdist bdist_wheel
     repo: chermed/odootools

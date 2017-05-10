@@ -28,7 +28,7 @@ Python package contains some tools for Odoo
 Features
 --------
 
-* TODO
+* Use classes Date and Datetime
 
 Credits
 ---------
@@ -37,4 +37,3 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
-
